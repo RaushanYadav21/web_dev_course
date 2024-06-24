@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selector</title>
+    <style>
+        div{
+            /* background-color:yellow;
+            color: darkolivegreen; */
+        }
+        /* class selector */
+        .red{
+            background-color: red;
+            color: blue;
+        }
+        /* id selector */
+        #green{
+            background-color: green;
+            color: aqua;
+        }
+/* child selector */
+div>p{
+    background-color: beige;
+    color: brown;
+}
+/* descemdant selector */
+div p{
+    background-color: yellow;
+    color: red;
+}
+/* universal selector */
+*{
+    margin:0;
+    padding: 0;
+}
+/* Pseudo selector */
+a:visited{
+    color:blueviolet;
+}
+a:link{
+    color: blue;
+}
+a:active{
+    background-color: brown;
+}
+a:hover{
+    background-color: aqua;
+}
+p:first-child{
+    background-color: palegreen;
+}
+p:second-child{
+    background-color: antiquewhite;
+}
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am first</p>
+       <p>I am second</p> 
+    </main>
+    <div class="red">
+        div
+        <p>para in <div></div></p>
+    </div>
+    <div id="green">
+        another div
+        <p>para in another div </p>
+    </div>
+    <a target="_blank" href="https:/www.google.com">click for search on google</a>
+    <a target="_blank" href="https:/www.facebook.com">click for search on facebook</a
+</body>
+</html>
